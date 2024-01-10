@@ -70,4 +70,9 @@ public class BookInfoServiceImpl implements BookInfoService {
         return bookInfoMapper.updateByPrimaryKeySelective(bookInfo);
     }
 
+    @Override
+    public Integer getTypeCount(int id) {
+        return bookInfoMapper.selectCountByType(id);
+    }
+
 }

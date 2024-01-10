@@ -29,7 +29,7 @@ public interface BookInfoMapper {
 
     List<BookInfo> selectAll();
 
-    int selectCountByType(Map<String, Object> map);
+    int selectCountByType(@Param("booktypeid")int id);
 
     List<BookInfo> selectByType(Map<String, Object> map);
 }

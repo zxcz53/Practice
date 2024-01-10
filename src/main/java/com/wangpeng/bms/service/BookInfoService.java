@@ -23,4 +23,6 @@ public interface BookInfoService {
     Integer deleteBookInfos(List<BookInfo> bookInfos);
 
     Integer updateBookInfo(BookInfo bookInfo);
+
+    Integer getTypeCount(int id);
 }
